@@ -11,6 +11,13 @@ function getRandomInt(min, max) {
 
 //console.log(get_computer_choice())
 
+/*
 function display_comp_choice() {
     document.getElementById('comp_choice').innerHTML = get_computer_choice()
 }
+*/
+
+function get_player_choice() {
+    let player_choice = document.getElementById('player_choice').value.toLowerCase()
+}
+
