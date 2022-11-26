@@ -11,7 +11,17 @@
     <h1>Rock, Paper, Scissors</h1>
     <!--<button id="comp_button" onclick="display_comp_choice()">Get computer choice</button>
     <p id="comp_choice"></p>-->
-    <input id="player_choice" placeholder="make your move">
-    <button id="player_button" onclick="get_player_choice()">Play your move</button>
+     <!--<input id="player_choice" placeholder="make your move">-->
+    <select id="player_choice" name="choose">
+        <option value="" disabled selected>Choose...</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+    <button id="play_button">Play your move</button>
+    <br/><br/>
+    <h2>Scoreboard</h2>
+    <h4 id="player_score">Player: 0</h4>
+    <h4 id="computer_score">Computer: 0</h4>
 </body>
 </html>
