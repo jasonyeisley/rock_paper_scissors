@@ -1,0 +1,66 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+#fullscreen {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#rps-img-div {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.rps-imgs {
+    width: 150px;
+    height: auto;
+}
+
+#scoreboard {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 3px solid yellow;  FOR DEBUGGING*/
+}
+
+#scoreboard-header {
+
+}
+
+#scoreboard-lower {
+    display: flex;
+    gap: 50px;
+
+}
+
+#player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#computer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+/*
+#rock {
+    box-shadow: 0 0 3rem white;
+    border: 2px solid black;
+}
+*/

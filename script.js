@@ -17,7 +17,7 @@ function display_comp_choice() {
 
 function get_player_choice() {
     //let player_choice = document.getElementById('player_choice').value
-    let player_choice = window.prompt('Enter choice')
+    //let player_choice = window.prompt('Enter choice')
     return player_choice
 }
 
@@ -78,4 +78,4 @@ function best_of_five() {
     }
     console.log(`GAME OVER`)
 }
-best_of_five()
+//best_of_five()
