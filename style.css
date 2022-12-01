@@ -12,6 +12,13 @@ body {
     align-items: center;
 }
 
+#titles-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 #rps-img-div {
     display: flex;
@@ -33,32 +40,22 @@ body {
     /*border: 3px solid yellow;  FOR DEBUGGING*/
 }
 
-#scoreboard-header {
-
-}
 
 #scoreboard-lower {
     display: flex;
     gap: 50px;
-
 }
 
-#player {
+.score-sections {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
 }
-
-#computer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
 
 /*
+EXAMPLE OF SHADOW FOR LATER MOUSEOVER
+
 #rock {
     box-shadow: 0 0 3rem white;
     border: 2px solid black;
