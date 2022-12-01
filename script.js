@@ -9,17 +9,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/*
-function display_comp_choice() {
-    document.getElementById('comp_choice').innerHTML = get_computer_choice()
-}
-*/
-
-function get_player_choice() {
-    //let player_choice = document.getElementById('player_choice').value
-    //let player_choice = window.prompt('Enter choice')
-    return player_choice
-}
 
 function play_game (player, comp) {
     let hierarchy = {
@@ -52,18 +41,6 @@ function console_play() {
     return win_or_lose
 }
 
-//console_play()
-/*
-function start_game() {
-    const play_button = document.getElementById('play_button')
-    play_button.addEventListener('click', play_game)
-    let player_score = 0
-    let comp_score = 0
-}
-
-start_game()
-
-*/
 
 function best_of_five() {
     let player_score = 0
@@ -79,3 +56,38 @@ function best_of_five() {
     console.log(`GAME OVER`)
 }
 //best_of_five()
+
+// GET ITEMS FROM THE DOCUMENT
+let rps_imgs = document.querySelectorAll('.rps-imgs')
+let rock = document.getElementById('rock')
+let paper = document.getElementById('paper')
+let scissors = document.getElementById('scissors')
+
+// ADD EVENT LISTENERS TO THE RPS-IMGS CLASS
+rps_imgs.forEach(element => {
+    element.addEventListener('mouseenter', highlightOption)
+    element.addEventListener('mouseleave', highlightOption)
+});
+
+// EVENT LISTENERS FOR INDIVIDUAL PLAYER SELECTIONS
+rock.addEventListener('click', getPlayerChoice)
+paper.addEventListener('click', getPlayerChoice)
+scissors.addEventListener('click', getPlayerChoice)
+
+function getPlayerChoice(e) {
+    let playerChoice = e.target.alt
+    //console.log(`Player clicked ${playerChoice}`)
+}
+
+function highlightOption(e) {
+
+    let option = e.target.id
+    if (e.type == 'mouseenter') {
+        let thisOption = document.getElementById(option)
+        thisOption.className = 'highlight'
+    } 
+    if (e.type == 'mouseleave') {
+        let thisOption = document.getElementById(option)
+        thisOption.className = 'rps-imgs'
+    } 
+}

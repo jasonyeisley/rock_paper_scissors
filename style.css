@@ -2,6 +2,7 @@ body {
     min-height: 100vh;
     background-color: black;
     color: white;
+    font-family: Marker Felt, fantasy;
 }
 
 #fullscreen {
@@ -19,31 +20,49 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 60px;
+}
 
 #rps-img-div {
     display: flex;
-
-    gap: 20px;
+    /*flex: 1;*/
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid yellow; FOR DEBUGGING */
+    padding: 30px;
+    /*transition: all .07s ease;*/
 }
 
-
 .rps-imgs {
-    width: 150px;
+    width: 170px;
     height: auto;
+    border-radius: 3rem;
 }
 
 #scoreboard {
     display: flex;
+    justify-self: flex-end;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    /*border: 3px solid yellow;  FOR DEBUGGING*/
+    /*border: 3px solid yellow;  /*FOR DEBUGGING*/
+}
+
+h2 {
+    font-size: 40px;
 }
 
 
 #scoreboard-lower {
     display: flex;
     gap: 50px;
+    /*border: 3px solid red;  /*FOR DEBUGGING*/
+}
+
+h3 {
+    font-size: 30px;
 }
 
 .score-sections {
@@ -53,11 +72,17 @@ body {
     flex-flow: column;
 }
 
-/*
-EXAMPLE OF SHADOW FOR LATER MOUSEOVER
+#player-subheader,
+#computer-subheader{
+    text-decoration: underline;
+}
 
-#rock {
+
+
+.highlight {
+    width: 170px;
     box-shadow: 0 0 3rem white;
     border: 2px solid black;
+    border-radius: 3rem;
+    transform: scale(1.05);
 }
-*/
