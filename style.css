@@ -3,6 +3,7 @@ body {
     background-color: black;
     color: white;
     font-family: Marker Felt, fantasy;
+    caret-color: transparent;
 }
 
 #fullscreen {
@@ -26,13 +27,19 @@ h1 {
 
 #rps-img-div {
     display: flex;
-    /*flex: 1;*/
     gap: 50px;
     justify-content: space-between;
     align-items: center;
-    /* border: 3px solid yellow; FOR DEBUGGING */
     padding: 30px;
+    /*flex: 1;*/
     /*transition: all .07s ease;*/
+    /*FOR DEBUGGING*/
+    /* border: 3px solid yellow;  */
+}
+
+.choice-div {
+    /*FOR DEBUGGING*/
+    /* border: 3px solid red;  */
 }
 
 .rps-imgs {
@@ -85,4 +92,46 @@ h3 {
     border: 2px solid black;
     border-radius: 3rem;
     transform: scale(1.05);
+}
+
+#announcement {
+    font-size: 20px;
+}
+
+#round {
+    font-size: 20px;
+    text-decoration: underline;   
+}
+
+#declaration-container {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+}
+
+#winner {
+    font-size: 100px;
+    gap: 20px;
+}
+
+#play-again-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#yes-btn {
+    border-radius: 5px;
+    border: 2px solid white;
+    display: inline-flex;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+#yes-btn:hover {
+    background-color: green;
 }
